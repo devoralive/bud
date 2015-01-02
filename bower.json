@@ -1,0 +1,29 @@
+{
+  "name": "bud",
+  "version": "0.0.1",
+  "authors": [
+    "Nicolas Dufreche <n.dufreche@gmail.com>"
+  ],
+  "description": "bud dom manipulator",
+  "main": "src/farmer.js",
+  "moduleType": [
+    "amd",
+    "dom manipulator"
+  ],
+  "keywords": [
+    "dom"
+  ],
+  "license": "MIT",
+  "homepage": "https://github/devoralive/tentacle",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15"
+  }
+}
