@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tentacle dom reactor routing</title>
+        <title>Bud</title>
         <meta charset="UTF-8">
     </head>
     <body>
+        <div id="container">
+            <a href="/test" id="clicker" data-tentacle="test:click">Test click</a>
+        </div>
         <script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
         <script type="text/javascript" src="require.config.js"></script>
         <script type="text/javascript">
-            require(['project'], function (project){
-                console.log(project);
+            require(['bud'], function (bud){
+                document.getElementById('clicker').addEventListener('click', function () {
+                    bud.insert('<p>hello world</p>').in('#container');
+                });
             });
         </script>
     </body>

@@ -2,7 +2,8 @@ require.config({
     baseUrl: './..',
     urlArgs: 'cb=' + Math.random(),
     paths: {
-        project: 'src/main'
+        bud: 'src/bud',
+        doa: 'bower_components/doa/src/doa'
     },
     shim: {}
 });
