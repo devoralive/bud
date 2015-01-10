@@ -13,7 +13,11 @@
         <script type="text/javascript">
             require(['bud'], function (bud){
                 document.getElementById('clicker').addEventListener('click', function () {
-                    bud.insert('<p>hello world</p>').in('#container');
+                    bud.insert('<p>hello world in container</p>').in('#container');
+                    bud.insert('<p>hello world hasFirstChildOf container</p>').hasFirstChildOf('#container');
+                    bud.insert('<p>hello world hasLastChildOf container</p>').hasLastChildOf('#container');
+                    bud.insert('<p>hello world after container</p>').after('#container');
+                    bud.insert('<p>hello world before container</p>').before('#container');
                 });
             });
         </script>
